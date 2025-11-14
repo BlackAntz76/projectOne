@@ -1,7 +1,11 @@
 document.addEventListener("alpine:init", () => {
   Alpine.data("products", () => ({
     items: [
-      { id: 1, name: "Robusta Brazil", img: "1.jpg", price: 25000 },
+      { id: 1, name: "RS UNHAS", img: "1.jpg", price: [`1. Nama Kegiatan ; Penyuluhan Kesehatan dan Tanya Jawab Interaktif Dalam Rangka World Cancer Day`,
+        `2. Waktu kegiatan ; 4 Februari 2023 `,
+        `3. Tempat Kegiatan ; Ruang tunggu RS Universitas Hasanuddin`
+      ]
+      },
       { id: 2, name: "Arabia Blend", img: "2.jpg", price: 20000 },
       { id: 3, name: "Mandailing", img: "3.jpg", price: 30000 },
       { id: 4, name: "Aceh Gayo", img: "4.jpg", price: 28000 },

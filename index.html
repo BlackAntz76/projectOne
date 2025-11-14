@@ -192,30 +192,21 @@ Bidang PNPK (Pedoman Nasional Pelayanan Kedokteran) dan Pencapaian Program Pemer
 
 <section class="products" id="products" x-data="products">
   <h2><span>Product Un</span>ggulan Kami</h2>
-  <p></p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
   <div class="row">
     <template x-for="(item, index) in items" x-key="index">
+
     <div class="product-card">
-      <div class="product-icons">
-        <a href="#" @click.prevent="$store.cart.add(item)">
-      
-  <use href="img/feather-sprite.svg#shopping-cart" />
-</svg>
-        <a href="#" class="item-detail-button">
-        
-
-  <use href="img/feather-sprite.svg#eye" />
-</svg>
-        </i></a>
-      </div>
       <div class="product-image">
-        <img :src="`img/products/${item.img}`" :alt="item.name">
-      </div>
+        <img :src="`img/products/${item.img}`" :alt="item.name"></div>
 
-      <div class="product-content">
-      
-   
+        <div class="product-title">
+       <h3 x-text="item.name"></h3>
+       <p x-text="item.price"></p>
+  
+      </div>
+    </div>
 </template>
      
  </div>

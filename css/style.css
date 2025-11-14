@@ -342,7 +342,8 @@ body {
  height: 100vh;
 }
 
-.about h2 {
+.about h2,
+.products h2 {
   text-align: center;
   font-size: 2.8rem;
   margin-bottom: 1%;
@@ -426,38 +427,60 @@ background-color: khaki;
 
 .products {
   padding-inline: 2%;
-  padding-top: 5%;
+  padding-top: 6%;
   margin-top: 10%;
   border-top: 1px solid #555;
+  
 }
 
 .products p {
   justify-self: center;
+  color: red;
 }
 
 .products .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-  gap: 1.5rem;
-  margin-top: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-inline: 20px;
+  
 }
 
 .products .product-card {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   border: 1px solid #666;
-  padding: 2rem;
+ padding: 2% 4%;
+  background-color: #f4f4f4;
+  gap: 30px;
 }
 
-.products .product-image {
-  padding: 1rem 0;
-}
-
-.products .product-image img {
-  height: 15rem;
-  width: 15rem;
+.products .product-card .product-image img {
+  height: 20rem;
+  width: 20rem;
   object-fit: cover;
 }
 
+.products .product-card .product-title  {
+ color: #000;
+
+ flex: 1 1 35rem;
+}
+
+.products .product-card .product-title h3 {
+  padding-left: 3%;
+} 
+
+.products .product-card .product-title p {
+  color: #010101;
+  width: 25vw;
+  height: 30vh;
+  margin-right: 10%;
+  padding-right: 5%;
+  background-color: #ffcc00;
+ 
+}
 
 
 
@@ -999,42 +1022,27 @@ footer .credit a {
   }
 
   .about {
-    min-height: 65vh;
+    height: 100vh;
     position: relative;
- 
+    top: 30px;
     margin-bottom: 10%;
-    height: auto;
+  
+    background-color: none;
    
   }
 
-.about .row {
+.about .row  {
       position: relative;
-    top: -30px;
+    top: 30px;
+      background-image: url(../img/stetoskop.jpg);
   } 
 
-  .about H2 {
+  .about .row .content {
     padding-bottom: 7%;
       position: relative;
       top: 20px;
    
   } 
-
-.menu {
-  padding-top: 12%;
-}
-
-  .menu .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .menu .row .menu-card img {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-  }
 
   .products .product-image img {
     height: 25rem;
