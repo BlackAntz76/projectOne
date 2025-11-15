@@ -35,7 +35,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 6%;
+  padding: 0.8rem 4%;
   background-color: rgba(1, 1, 1, 0.3);
   border-bottom: 0.3rem solid silver;
   position: fixed;
@@ -46,6 +46,9 @@ body {
 }
 
 .navbar .navbar-logo {
+  position: relative;
+  left: -50px;
+  top: 18px;
   font-size: 2.2rem;
   font-weight: 700;
   color: #000;
@@ -58,7 +61,8 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  opacity: 0;
+
+
 }
 
 
@@ -100,16 +104,22 @@ body {
 }
 
 
-
+.navbar .navbar-nav {
+  text-align: center;
+  padding-top: 3%;
+  width: 35%;
+}
 
 
 
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1.7rem;
+  text-align: center;
+  font-size: 1.5rem;
   margin: 0 0.5rem;
-  padding: 0 0.3rem;
+  padding: 0 2%;
+  gap: 10px;
   transition: 0.3s linear;
 }
 
@@ -118,7 +128,8 @@ body {
   transform: scale(1.2);
   transform: translatey(-5px);
   transition: all 0.5s;
-  filter: drop-shadow(0 0 1px var(--tertier));
+  filter: drop-shadow(0 0 2px var(--primary));
+
 }
 
 .navbar .navbar-nav a::after {
@@ -134,13 +145,16 @@ body {
   transform: scaleX(0.6);
 }
 
+.navbar .navbar-extra  {
+  padding-top: 2%;
+}
 .navbar .navbar-extra a {
-  color: #fff;
-  margin: 0 0.5rem;
+  color: var(--primary);
 }
 
 .navbar .navbar-extra a:hover {
   color: var(--secondary);
+   filter: drop-shadow( 1px 1px 2px var(--primary));
 }
 
 #hamburger-menu {
@@ -460,25 +474,24 @@ background-color: khaki;
   height: 20rem;
   width: 20rem;
   object-fit: cover;
+  padding: 3% 0;
 }
 
 .products .product-card .product-title  {
  color: #000;
-
  flex: 1 1 35rem;
 }
 
 .products .product-card .product-title h3 {
-  padding-left: 3%;
+  padding: 3%;
+
 } 
 
 .products .product-card .product-title p {
   color: #010101;
-  width: 25vw;
-  height: 30vh;
+  width: 23vw;
+  height: auto;
   margin-right: 10%;
-  padding-right: 5%;
-  background-color: #ffcc00;
  
 }
 
@@ -497,9 +510,10 @@ background-color: khaki;
   color: var(--tertier);
   text-align: center;
   font-size: 2.6rem;
+  margin-top: 3%;
   margin-bottom: 2rem;
   word-spacing: 0.8rem;
-  text-shadow: var(--bs);
+
 }
 
 .contact h2 span {
@@ -508,46 +522,67 @@ background-color: khaki;
 
 .contact .contact-container {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  gap: 30px;
-  /* justify-content: space-between; */
-  margin-bottom: 4rem;
-}
+ 
 
-.contact-info {
-  display: block;
-  position: relative;
-  width: 50%;
+}
+.contact .contact-box {
   height: 70vh;
-  padding-inline: 0 2rem;
-  /* flex: 1 1 40rem; */
-  /* margin-right: 2rem; */
-  border-radius: 20px;
-  background-color: pink;
+  width: 50%;
+  background-color: wheat;
 }
 
-.contact .contact-container .contact-info h3,
-.contact .contact-container .contact-info span{
-  padding-left: 7%;
-  padding-top: 150px;
-  color: var(--secondary);
-  font-weight: bold;
-  font-size: 1.2rem;
+
+.contact .contact-box .contact-info {
+  display: inline-block;
+  margin-bottom: 20px;
 
  
 }
 
-.contact-info a {
+.contact .contact-box .contact-info ul  {
+  padding-left: 7%;
+  color: var(--secondary);
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 7%;
+  word-spacing: 10px;
+  
+}
 
-  justify-content: center;
-  color: var(--primary);
-  text-shadow: var(--tersier);
-  margin: 0 4%;
+.contact .contact-box .contact-info ul li {
+width: 40vw;
+padding-top: 5px;
+font-size: 1.4rem;
+font-weight: bold;
+}
+
+.contact .contact-add,
+.contact .contact-phone,
+.contact .contact-mail {
+  padding-left: 5%;
+  margin-bottom: 5%;
+
+}
+
+.contact .contact-box .contact-info .contact-add h3,
+.contact .contact-box .contact-info .contact-phone h3,
+.contact .contact-box .contact-info .contact-mail h3 {
+  padding-left: 3%;
+  color: var(--secondary);
+}
+
+
+.contact-info a {
+  color: #5c5b66;
+    animation-name: animasiku;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .contact-info a:hover {
-  color: blueviolet;
+  color: var(--primary);
 }
 
 .contact-info h3 {
@@ -557,26 +592,12 @@ background-color: khaki;
   position: absolute;
 }
 
-.contact-info h3:span {
-  color: black;
-  font-size: 1.1rem;
-  display: inline-block;
-  position: relative;
-  margin-top: 2.4rem;
+.peta iframe {
+  width: 60%;
+  
 }
 
-/* .contact-info .contact-add,
-.contact-info .contact-phone,
-.contact-info .contact-mail {
-  color: #ffffff;
-  display: block;
-  font-size: 1rem;
- 
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-} */
-
-.contact-form {
+.contact .contact-container .contact-form {
   position: relative;
   flex-wrap: wrap;
   /* align-items: center; */
