@@ -1,0 +1,90 @@
+:root {
+  --primary: #fff;
+  --secondary: #000;
+  --tertier: #ffcc00;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: "poppins" sans-serif;
+  background-color: var(--primary);
+  color: var(--primary);
+  text-shadow: 1px 1px 2px #000;
+  background-size: cover;
+  background-position: center;
+}
+
+.organisasi {
+  display: inline-block;
+  background-image: url(../img/pemandangan3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 2px solid #fff;
+  box-shadow: 2px solid #fff ;
+  padding-inline: 5%;
+  padding-bottom: 3%;
+  border: 1px solid grey;
+  min-width: 100vw;
+  min-height: 100vh;
+ 
+ 
+}
+.organisasi h1 {
+  font-size: 3rem;
+  margin-bottom: 5%;
+
+}
+
+.organisasi ul {
+  margin-bottom: 3%;
+  list-style: none;
+}
+
+
+.organisasi ul li {
+  padding-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+}
+.organisasi ul li:hover {
+  color: var(--secondary);
+  text-shadow: 1px 1px 2px var(--primary);
+   
+width: auto;
+}
+
+.organisasi ul span {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px;
+
+}
+
+.organisasi h3 {
+  margin-bottom: 10px;
+  border-bottom: 2px dashed silver ;
+}
+
+.organisasi h5 {
+  font-size: 1rem;
+}
+.organisasi a:hover {
+  color: var(--primary);
+  text-shadow: var(--secondary);
+ 
+}
+

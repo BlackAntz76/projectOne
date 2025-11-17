@@ -376,14 +376,14 @@ body {
   height: 70vh;
 }
 
-.about .row .about-img {
-   background-image: url(../img/stetoskop.jpg);
-   background-position: center;
+.about .row .about-img img {
+  height: 70vh;
+  width: 35vw;
+  background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-  flex: 1 1 40rem;
+ 
 }
-
 
 
 .about .row .content {
@@ -395,11 +395,14 @@ body {
 .about .row .content h3 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2%;
   color: var(--secondary);
   word-spacing: 1px;
   font-weight: bold;
-  background-color:  #cfc4c4;
+  max-width: 55%;
+  padding-bottom: 1%;
+  border-bottom: 2px dashed #010101;
+
  
 
 }
@@ -419,15 +422,26 @@ body {
   flex-wrap: wrap;
   color: black;
   font-weight: bold;
+  margin-top: 1%;
   margin-bottom: 1%;
   border-bottom: 1px solid silver;
-column-gap: 30px;
-background-color: khaki;
+  height:25%;
+  max-width: 55% ;
   
 }
-.about .row .content .container-pengurus h5  {
- margin-bottom: 10px;
 
+.about .row .content .container-pengurus h4  {
+  font-size: 1.7rem;
+ width: 100vw;
+ margin-bottom: 8px;
+ word-spacing: 5px;
+ 
+}
+
+.about .row .content .container-pengurus h5  {
+  display: flex;
+ padding-inline: 2%;
+ 
 }
 
 .about .row .content .container-pengurus  span{
@@ -522,31 +536,30 @@ background-color: khaki;
 
 .contact .contact-container {
   display: flex;
+  gap: 100px;
  
 
 }
+
 .contact .contact-box {
   height: 70vh;
   width: 50%;
   background-color: wheat;
 }
 
-
 .contact .contact-box .contact-info {
   display: inline-block;
   margin-bottom: 20px;
-
- 
 }
 
 .contact .contact-box .contact-info ul  {
-  padding-left: 7%;
+  padding-left: 16%;
   color: var(--secondary);
   font-weight: bold;
   text-decoration: none;
   margin-bottom: 7%;
   word-spacing: 10px;
-  
+ list-style: none;
 }
 
 .contact .contact-box .contact-info ul li {
@@ -554,6 +567,7 @@ width: 40vw;
 padding-top: 5px;
 font-size: 1.4rem;
 font-weight: bold;
+
 }
 
 .contact .contact-add,
@@ -593,83 +607,66 @@ font-weight: bold;
 }
 
 .peta iframe {
-  width: 60%;
+  display: flex;
+  width: 200px;
+  height: 100px;
+  margin-left: 15%;
+  border-radius: 10px ;
   
+ 
 }
 
-.contact .contact-container .contact-form {
-  position: relative;
-  flex-wrap: wrap;
-  /* align-items: center; */
-  background-color: khaki;
-  width: 45%;
-  /* flex: 1 1 50rem; */
-  padding: 0 3rem;
-  border-radius: 20px;
-  text-align: left;
-  box-shadow: var(--bs);
-}
-
-.contact-form h3 {
-  display: block;
-  color: #010101;
-  font-size: 2.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1.4rem;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-  display: block;
-  border-color: #010101;
-  box-shadow: #010101;
+button {
+  margin-left: 5%;
 }
 
 button[type="submit"] {
-  display: inline;
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  left: 32px;
   font-size: 1.5rem;
-  background-color: #5c5b66;
+  background-color: grey;
   color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-left: 2px;
+  margin-bottom: 1.5rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-  background-color: var(--second);
   color: var(--primary);
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1.2rem;
+  background-color: var(--tertier);
 }
 
 .form-group textarea {
   height: 150px;
 }
 
-iframe {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  position: relative;
-  height: 30%;
+.contact .contact-container .input-data {
+  background-color: #5c5b66;
   width: 40%;
-  margin-inline: 3%;
-  /* margin-top: 10rem; */
-  border-radius: 10px;
-  box-shadow: var(--bs);
+  padding-left: 5%;
+  
 }
+
+.contact .contact-container .input-data .input-grup {
+  padding-top: 2%;
+
+}
+.contact .contact-container .input-data .input-grup input {
+  margin-left: 2%;
+  padding-left: 4%;
+  height: 4vh;
+  width: 50%;
+  background-color: khaki;
+
+}
+
 
 footer {
   font-size: 1rem;
@@ -680,118 +677,11 @@ footer {
   color: var(--primary);
   padding: 1rem 0;
 }
+
 /* nedia queries */
 
 /* leptop */
 
-
-
-/* 
-.contact {
-  padding-top: 3%;
-  height: 100vh;
-
-}
-
-.contact h2 {
-  text-align: center;
-  font-size: 2.6rem;
-  margin-top: 2%;
-}
-
-.contact p {
-  text-align: center;
-  margin: auto;
-  margin-bottom: 2%;
-  max-width: 40rem;
-  font-size: 1.2rem;
-  font-weight: 1rem;
-  line-height: 1;
-}
-
-.contact .row {
-  display: flex;
-  height: 70%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  gap: 5rem;
- padding-inline: 5%;
-  border-radius: 10px;
-}
-
-.contact .row .maps {
-  flex: 1 1 45rem;
-  object-fit: cover;
-  border: 2px solid #fff;
-  border-radius: 10px;
-} */
-/* 
-.contact .row form {
-  background-image: url(../img/products/2.jpg);
-  box-sizing: border-box;
-  background-color: rgba(128, 128, 128, 0.9);
-  flex: 1 1 45rem;
-  padding: 0 3%;
-  width: auto;
-  text-align: center;
-  border: 2px solid #666;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.contact .row .input-grup {
-  display: flex;
-  align-items: center;
-  margin-top: 10%;
-  background-color: var(--bg);
-  box-sizing: border-box;
-  border: 1px solid #eee;
-  padding-left: 1rem;
-}
-
-.contact .row form .input-grup input {
-  width: 100%;
-  padding: 3%;
-  background: none;
-  color: #fff;
-  font-size: 1.3rem;
-}
-
-.contact .row form .btn {
-  margin-top: 3rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.7rem;
-  color: #fff;
-  background-color: var(--primary);
-  cursor: pointer;
-  border-radius: 15px;
-}
-
-.btn:hover {
-  filter: drop-shadow(0 0 2px var(--primary));
-} */
-
-/* footer */
-/* 
-footer {
-  background-color: var(--primary);
-  text-align: center;
-  padding: 0.5rem;
-  font-size: 1.8rem;
-  word-spacing: 4px;
-  padding-top: 15px;
-
-} */
-
-/* .credit {
-  font-size: 0.8rem;
-}
-
-footer .credit a {
-  color: var(--bg);
-  font-weight: 700;
-} */
 
 
 /* nedia queries */
@@ -805,36 +695,56 @@ footer .credit a {
 
 @media (max-width: 884px) {
   html {
-    font-size: 80%;
+    font-size: 50%;
   }
 
   .navbar {
     height: 8%;
   }
-  .hero {
-    height: 100vh;
+
+
+  .navbar img {
+    width: 70px;
+    height: 60px;
+    background-position: center;
+    margin-right: 4%;
+
   }
 
-  .social {
-    top: 100px;
-    height: 50px;
-    width: 50px;
+
+  .about .row .about-img  {
+    display: none;
   }
 
-  .social svg {
-    height: 50px;
-    width: 50px;
+  .about h2 {
+    padding-top: 6%;
+    margin-bottom: 3%;
+    
   }
 
-  .about {
-    height: 45vh;
-    margin-top: 10%;
-    padding-top: 10%;
+ .about .row  {
+  justify-content: center;
+  justify-items: center;
+    background-image: url(../img/stetoskop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 7%;
+    
+  } 
+
+  .about .row .content h3 {
+  background-color: transparent;
+  line-height: 20px;
   }
 
-  .about .row {
-    margin-top: 5%;
-  }
+   .about .row .content a {
+    line-height: 25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+   }
+
+ 
 
   .menu {
     padding-top: 10%;
@@ -931,17 +841,17 @@ footer .credit a {
     width: 85%;
   }
 
-  .hero .content h1 {
+  .home .content h1 {
     line-height: 0.4;
   }
 
-  .hero .content h2 {
+  .home .content h2 {
     padding: 1% 0;
     span {
       height: 3em;
     }
   }
-  .hero .cta {
+  .home .cta {
     position: relative;
     top: 20px;
     height: 10%;
@@ -949,7 +859,8 @@ footer .credit a {
   }
 
   .about {
-    min-height: 100vh;
+    height: 100vh;
+    
   }
 
   .about .row {
@@ -1010,58 +921,68 @@ footer .credit a {
 
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 37%;
+  }
+
+  .navbar img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar .navbar-logo {
+    padding-left: 3%;
+    padding-bottom: 2%;
+  
   }
 
   .navbar .navbar-nav {
-   
-    width: 35%;
+    text-align: start;
+    text-align: left;
+    width: 25%;
   }
-  .hero {
+
+  .navbar .navbar-nav a {
+    text-align: start;
+ 
+   
+  }
+
+  .home {
     margin-bottom: 20%;
   }
 
-  .hero .content {
-    padding-top: 8%;
+  .home .home-text {
+    width: 70vw;
+    margin-left: 4%;
   }
 
-  .hero .content .cta {
-    width: 45%;
-    height: 13%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(1.5rem, 2.5vw, 1.4rem);
-    padding: 0.75rem 1rem;
-    font-weight: bold;
-  }
 
-  .social {
-    top: 8%;
-    height: 50px;
-    width: 50px;
-  }
+
 
   .about {
     height: 100vh;
+  }
+
+  .about h2 {
     position: relative;
-    top: 30px;
-    margin-bottom: 10%;
-  
-    background-color: none;
-   
+    top: -30px;
   }
 
 .about .row  {
       position: relative;
-    top: 30px;
-      background-image: url(../img/stetoskop.jpg);
+      top: -30px;
+   
   } 
 
+
   .about .row .content {
-    padding-bottom: 7%;
       position: relative;
-      top: 20px;
+      top: -20px;
+  } 
+
+  .about .row .container-pengurus {
+     min-width: 100%;
+     padding-top: 5% ;
    
   } 
 
