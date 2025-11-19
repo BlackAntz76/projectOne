@@ -35,8 +35,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
- max-width: 100%;
-  padding: 0.8rem 4%;
+  max-width: 100%;
+
+  padding: 0.5rem 4%;
   background-color: rgba(1, 1, 1, 0.3);
   border-bottom: 0.3rem solid silver;
   position: fixed;
@@ -63,6 +64,10 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 
+
+}
+.navbar  img {
+  filter: brightness(1) invert(1);
 
 }
 
@@ -125,11 +130,11 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: var(--secondary);
+  color: var(--tertier);
   transform: scale(1.2);
   transform: translatey(-5px);
   transition: all 0.5s;
-  filter: drop-shadow(0 0 2px var(--primary));
+  filter: drop-shadow(0 0 1px var(--tertier));
 
 }
 
@@ -230,11 +235,7 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1;
- 
- 
- color: var(--tertier);
-
-  /* background: linear-gradient(120deg, transparent, var(--primary), transparent); */
+  color: var(--tertier);
   cursor: pointer;
 }
 
@@ -248,7 +249,6 @@ body {
   font-weight: bold;
   font-size: 900;
   padding-right: 10px;
- 
   filter: drop-shadow(1px 1px 2px #000);
 }
 
@@ -329,13 +329,13 @@ body {
 }
 
 .home-text p {
-  color: khaki;
+  color: var(--tertier);
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 1rem;
   letter-spacing: 1px;
   word-spacing: 5px;
- text-shadow: 0 0 1px var(--primary);
+  text-shadow: 0 0 1px var(--primary);
   cursor: pointer;
 }
 
@@ -354,7 +354,7 @@ body {
   padding-top: 7%;
   padding-inline: 1%;
   margin-top: 4%;
- height: 100vh;
+  height: 100vh;
 }
 
 .about h2,
@@ -373,7 +373,7 @@ body {
 
 .about .row {
   display: flex;
-  padding-inline: 5%;
+  column-gap: 4%;
   height: 70vh;
 }
 
@@ -383,14 +383,12 @@ body {
   background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
- 
+
 }
 
 
 .about .row .content {
   flex: 1 1 50rem;
-  padding-left: 3rem;
-  
 }
 
 .about .row .content h3 {
@@ -404,15 +402,31 @@ body {
   padding-bottom: 1%;
   border-bottom: 2px dashed #010101;
 
- 
-
 }
 
 .about .row .content a {
-  display: inline;
+  display: inline-block;
   font-size: 1.2rem;
+ 
+}
+
+.about .row .content a:after {
+  content: "";
+  display: block;
+  padding-bottom: 1px;
+  border-bottom: 1.5px dashed var(--secondary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s linear;
+  filter: drop-shadow(0 0 1px var(--primary));
 
 }
+
+.about .row .content a:hover::after {
+  transform: scaleX(1);
+   
+}
+
 .about .row .content a span {
  color: #000;
  font-weight: bold;
@@ -535,37 +549,34 @@ body {
   color: var(--secondary);
 }
 
+
+
 .contact .contact-container {
-  display: flex;
-  gap: 100px;
- 
-
-}
-
-.contact .contact-box {
+    display: flex;
   height: 70vh;
   width: 50%;
   background-color: wheat;
+   column-gap: 50px;
 }
 
-.contact .contact-box .contact-info {
+.contact .contact-container .contact-info {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.contact .contact-box .contact-info ul  {
+.contact .contact-container .contact-info ul  {
   padding-left: 16%;
   color: var(--secondary);
   font-weight: bold;
   text-decoration: none;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
   word-spacing: 10px;
  list-style: none;
 }
 
-.contact .contact-box .contact-info ul li {
-width: 40vw;
-padding-top: 5px;
+.contact .contact-container .contact-info ul li {
+width: 45vw;
+
 font-size: 1.4rem;
 font-weight: bold;
 
@@ -575,13 +586,13 @@ font-weight: bold;
 .contact .contact-phone,
 .contact .contact-mail {
   padding-left: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 
 }
 
-.contact .contact-box .contact-info .contact-add h3,
-.contact .contact-box .contact-info .contact-phone h3,
-.contact .contact-box .contact-info .contact-mail h3 {
+.contact .contact-container .contact-info .contact-add h3,
+.contact .contact-container .contact-info .contact-phone h3,
+.contact .contact-container .contact-info .contact-mail h3 {
   padding-left: 3%;
   color: var(--secondary);
 }
@@ -609,32 +620,54 @@ font-weight: bold;
 
 .peta iframe {
   display: flex;
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   margin-left: 15%;
   border-radius: 10px ;
+  margin-top: 20px;
   
  
 }
 
-button {
-  margin-left: 5%;
+.contact .contact-container .input-data {
+  background-color: #5c5b66;
+  min-width: 45vw;
+  padding-left: 5%;
+  
 }
+
+.contact .contact-container .input-data .input-grup {
+  display: flex;
+  padding-top: 3%;
+  margin-bottom: 3%;
+
+}
+
+.contact .contact-container .input-data label {
+  font-size: 2rem;
+  width: 30%;
+
+}
+.contact .contact-container .input-data input {
+  margin-left: 2%;
+  padding-left: 4%;
+  height: 4vh;
+  width: 50%;
+
+}
+
+
 
 button[type="submit"] {
   display: inline-block;
   position: relative;
   top: 15px;
-  left: 32px;
   font-size: 1.5rem;
-  background-color: grey;
-  color: #ffffff;
-  border: none;
+  background-color: white;
+  color: #010101;
   padding: 0.5rem 1rem;
   cursor: pointer;
   margin-top: 1rem;
-  margin-left: 2px;
-  margin-bottom: 1.5rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -644,29 +677,6 @@ button[type="submit"]:hover {
   background-color: var(--tertier);
 }
 
-.form-group textarea {
-  height: 150px;
-}
-
-.contact .contact-container .input-data {
-  background-color: #5c5b66;
-  width: 40%;
-  padding-left: 5%;
-  
-}
-
-.contact .contact-container .input-data .input-grup {
-  padding-top: 2%;
-
-}
-.contact .contact-container .input-data .input-grup input {
-  margin-left: 2%;
-  padding-left: 4%;
-  height: 4vh;
-  width: 50%;
-  background-color: khaki;
-
-}
 
 
 footer {
@@ -715,6 +725,7 @@ footer {
 
   .about .row .about-img  {
     display: none;
+  
   }
 
   .about h2 {
@@ -734,10 +745,15 @@ footer {
     
   } 
 
+  .about .row .content,
+  .about .row .content h4{
+    padding-inline-start: 5%;
+  }
+
   .about .row .content h3 {
- 
   line-height: 20px;
   min-width: 80%;
+  
   
   }
 
@@ -745,6 +761,7 @@ footer {
     line-height: 25px;
     font-size: 1.6rem;
     font-weight: bold;
+    
    }
 
  
@@ -762,9 +779,9 @@ footer {
 }
 
 .products .row {
-  padding-inline: 5% 0;
-  height: auto;
-  row-gap: 30px;
+
+  gap: 30px;
+
 }
 
 .products .row .product-image img {
@@ -772,8 +789,9 @@ footer {
   background-position: center;
   background-size: covera;
 }
+
 .products .row .product-image {
- padding-top: 5%;a
+ padding-top: 5%;
 }
 
 
@@ -784,29 +802,46 @@ footer {
 
 
                  /* CONTACT */
+
+
   .contact {
-    position: relative;
-    /* top: -50px; */
-    height: 100vh;
     margin-top: 20%;
   }
 
   .contact h2 {
     padding-top: 7%;
+    margin-bottom: 5%;
   }
 
-  .contact p {
-    padding-top: 3%;
-  }
-  .contact .row {
-    padding-top: 7%;
+
+ 
+  .contact .contact-container {
     height: 50vh;
-    /* flex-direction: column; */
+   
+  
+  }
+
+   .contact .contact-container .contact-info,
+   .contact .contact-container .input-data {
+    padding-top: 5%;
+   }
+
+  .contact .contact-container .contact-info ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+  }
+
+  .contact .contact-info iframe {
+    position: relative;
+   min-width: fit-content;
+   height: 20vh;
+   ima
   }
 
   footer {
-    position: relative;
-    top: -50px;
+    justify-content: flex-end;
+  
   }
 }
 
@@ -875,9 +910,8 @@ footer {
      margin-right: 5%;
     
   }
-  .navbar .navbar-extra a {
   
-   
+  .navbar .navbar-extra a {
     padding-right: 50%;
   }
 
@@ -885,26 +919,8 @@ footer {
     width: 85%;
   }
 
-  .home .content h1 {
-    line-height: 0.4;
-  }
-
-  .home .content h2 {
-    padding: 1% 0;
-    span {
-      height: 3em;
-    }
-  }
-  .home .cta {
-    position: relative;
-    top: 20px;
-    height: 10%;
-    width: 30%;
-  }
-
   .about {
     height: 100vh;
-    
   }
 
   .about .row {
@@ -934,10 +950,7 @@ footer {
     font-size: 2rem;
   }
 
-  .about .row .content p {
-    font-size: 1.6rem;
-    line-height: 1.4rem;
-  }
+ 
 
 
                   /* P R O D U C T */
@@ -996,7 +1009,11 @@ footer {
 
 @media (max-width: 450px) {
   html {
-    font-size: 30%;
+    font-size: 35%;
+  }
+  
+  #contact {
+    scroll-margin-top: -500px;
   }
 
   .navbar img {
@@ -1015,7 +1032,6 @@ footer {
   .navbar .navbar-extra {
     position: relative;
     left: -30px;
-   
     width: 7%;
   
   }
@@ -1052,7 +1068,7 @@ footer {
       top: -20px;
   } 
   .about .row .content a {
-
+  
     font-weight: bold;
     line-height: 15px;
   } 
@@ -1063,9 +1079,12 @@ footer {
    
   } 
 
+  .products {
+    height: 100vh;
+    border-bottom: 1px solid var(--secondary) ;
+  }
 
-
-.products .row .product-card:nth-of-type(n+4) {
+.products .row .product-card:nth-of-type(n+3) {
   display: none;
 }
 
@@ -1077,8 +1096,8 @@ footer {
 .products .row .product-image {
  width: 40%;
 }
+
 .products .row .product-image img {
-  
   width: 100%;
  object-fit: cover;
  background-position: center;
@@ -1095,36 +1114,47 @@ footer {
 
 
 
-
   .contact {
+    display: inline-block;
     height: 100vh;
- border: 1px solid #555;
- padding-inline: 5%;
   }
 
   .contact H2 {
-    padding-top: 12%;
+  
   }
 
-  .contact .row {
-    position: relative;
-    top: -20px;
+  .contact .contact-container {
+    display: grid;
+   background-color: transparent;
+    row-gap: 20px;
   }
 
-  .contact .row form {
-    position: relative;
-    top: -70px;
-    min-width: 100%;
-  }
-  .contact .row .input-grup {
-    margin-left: 5%;
+  .contact .contact-container .contact-info {
+    width: 100vw;
+    background-color: wheat;
+    
+
   }
 
-  footer {
-    position: relative;
-    top: -25px;
+  .contact .contact-container .input-data {
+    height: 35vh;
+  }
+  
+  .contact .contact-container .input-data  label {
+    
+    align-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .contact .btn {
+    width: 25%;
+    height: 4vh;
+  }
  
-  }
+ 
+
+ 
 
 
 }

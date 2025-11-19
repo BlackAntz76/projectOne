@@ -46,8 +46,6 @@ body {
   font-size: 3rem;
   margin-bottom: 5%;
 
-
-
 }
 
 .organisasi ul {
@@ -62,10 +60,10 @@ body {
   cursor: pointer;
   width: fit-content;
 }
+
 .organisasi ul li:hover {
   color: var(--secondary);
   text-shadow: 1px 1px 2px var(--primary);
-   
 width: auto;
 }
 
