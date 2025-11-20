@@ -272,23 +272,29 @@ Bidang PNPK (Pedoman Nasional Pelayanan Kedokteran) dan Pencapaian Program Pemer
        
 
 <div class="input-data">
-    <form action="">
-    <div class="input-grup">
-     <label for="nama">Username :</label>
-      <input type="text" placeholder="Nama" id="nama">
-    </div>
-    <div class="input-grup">
-    <label for="email">Email :</label>
-      <input type="text" placeholder="Email" id="email">
-    </div>
-    <div class="input-grup">
-      <label for="phone">No handphone :</label>
-      <input type="text" placeholder="Phone" id="phone">
-    </div>
+    <form action="" method="post">
 
-    <button type="submit" class="btn">kirim pesan
+      <ul>
+    <li>
+     <label for="nama">Username :</label>
+      <input type="text" name="username" id="nama">
+    </li>
+    
+    <li>
+    <label for="email">Email :</label>
+      <input type="text" name="email" id="email">
+    </li>
+
+    <li>
+      <label for="phone">No handphone :</label>
+      <input type="text" name="phone" id="phone">
+    </li>
+
+    <li>
+    <button class="btn" type="submit" name="kirim" >kirim pesan
     </button>
-      </div>
+      </li>
+    </form>
 
         </div>
   </section>
