@@ -196,8 +196,20 @@ Bidang PNPK (Pedoman Nasional Pelayanan Kedokteran) dan Pencapaian Program Pemer
   <h2><span>Kegiatan </span> Kami</h2>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
+   <div class="pagination">
+        <button @click="prevPage()" >Prev</button>
+
+        <span>
+          Page <span x-text="currentPages"></span></span>
+        </span>
+        
+        <button @click="nextPage()" >Next</button>
+
+      </div>
+
+
   <div class="row">
-    <template x-for="(item, index) in items" x-key="index">
+    <template x-for="(item, index) in paginatedItems()" x-key="index">
 
     <div class="product-card">
       <div class="product-image">

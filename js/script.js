@@ -19,14 +19,6 @@ document.querySelector("#hamburger-menu").onclick = () => {
 };
 
 
-//   toggle class active 
-const shoppingCart = document.querySelector('.shopping-cart');
-document.querySelector('#shopping-cart-button').onclick = 
-(e) => {
-  shoppingCart.classList.toggle('active');
-  e.preventDefault();
-};
-
 const hm = document.querySelector("#hamburger-menu");
 const sb = document.querySelector("#search-button");
 const sc = document.querySelector('#shopping-cart-button');
@@ -63,44 +55,3 @@ btn.onclick = (e) => {
 
 
 
-// klik tombol close
-document.querySelector('.modal .close-icon').onclick = (e) => {
-  itemDetailModal.style.display = 'none';
-  e.preventDefault();
-};
-
-// klik di luar modal
-
-
-window.onclick = (e) => {
-  if (e.target === itemDetailModal) {
-    itemDetailModal.style.display = 'none';
-  };
-};
-
-
-
-// const social = document.getElementsById("social");
-
-// social.addEventListener("mouseenter", () => {
-//   social.classList.add("spinRight");
-
-//   setTimeout(() => {
-//     searchBox.classList.remove("spinRight");
-//   }, 1000);
-// });
-
-// const social = document.querySelectorAll('.social li');
-// social.forEach( li => {
-//   const svg = li.querySelector('svg');
-//   if (!svg) return;
-
-// li.addEventListener('mouseenter', () => {
-//   svg.classList.add('.social ul li svg');
-
-//   svg.addEventListener('animationend', () => {
-//     svg.classList.remove('spinRight');
-//   }, { once: true});
-// });
-
-// });
