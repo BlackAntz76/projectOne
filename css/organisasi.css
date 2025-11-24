@@ -28,7 +28,7 @@ body {
 
 .organisasi {
   display: inline-block;
-  background-image: url(../img/pemandangan3.jpg);
+  background-image: url(../img/gambar/hand-coffee.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,9 @@ body {
  
  
 }
+
 .organisasi h1 {
+  padding-top: 5%;
   font-size: 3rem;
   margin-bottom: 5%;
 
@@ -91,3 +93,18 @@ width: auto;
  
 }
 
+
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+
+  
+.organisasi h1 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+
+}
+
+
+}

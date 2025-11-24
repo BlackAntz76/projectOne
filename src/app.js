@@ -3,8 +3,7 @@ document.addEventListener("alpine:init", () => {
     items: [
       { id: 1, name: "RS UNHAS", img: "1.jpg", 
         price: "1. Nama Kegiatan ; Penyuluhan Kesehatan dan Tanya Jawab Interaktif Dalam Rangka World Cancer Day",
-        price2: "2. Waktu kegiatan ; 4 Februari 2023 ",
-        price3: "3. Tempat Kegiatan ; Ruang tunggu RS Universitas Hasanuddin",
+        price2: "2. Waktu kegiatan ; 4 Februari 2023 ",price3: "3. Tempat Kegiatan ; Ruang tunggu RS Universitas Hasanuddin",
         price4: "4. Bentuk kegiatan ; Penyuluhan tentang Deteksi Dini Kanker Bagian THT",
         price5: "5. Penanggung jawab kegiatan ; Dr. dr. Nova A. L. Pieter, Sp. T.H.T.B.K.L, Subsp.Onko.(K), FICS",
         price6: "6. Kerjasama dengan ; PKRS RS. Unhas,  Dep. IK. T.H.T.B.K.L Fakultas Kedokteran Unhas",
