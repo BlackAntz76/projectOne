@@ -177,6 +177,7 @@ section {
   position: absolute;
   top: 100%;
   right: 9%;
+  color: #010101;
   background-color: white;
   width: 57rem;
   height: 3.5rem;
@@ -855,9 +856,13 @@ footer {
   word-spacing: 10px;
   font-size: 2rem;
   font-weight: bold;
- 
- 
-  
+   filter: drop-shadow(1px 1px 2px var(--primary));
+  }
+
+  .about .row .content h3:hover {
+    filter: drop-shadow(0 1px 2px var(--secondary));
+    color: var(--primary);
+  font-size: 2rem;
   }
 
    .about .row .content a {
@@ -866,7 +871,23 @@ footer {
     font-weight: bold;
     
    }
+   
+   .about .container-pengurus {
+    max-height: 7%;
+   }
 
+
+
+   .about .container-pengurus ul {
+    display: inline-block;
+
+   }
+
+   .about .container-pengurus ul li{
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-right: 25px;
+   }
  
                 /* PRODUCTS */
  
@@ -875,9 +896,6 @@ footer {
     height: 100vh;
     padding-top: 13%;
     margin-bottom: 10%;
-    
-  
-   
   }
 
 .products h2 {
@@ -885,7 +903,6 @@ footer {
 }
 
 .products .row .product-card {
-
   height: 35vw;
   margin-bottom: 30px;
 
@@ -898,20 +915,22 @@ footer {
   padding-top: 10%;
   background-position: center;
   background-size: cover;
- 
 }
 
 .products .row .product-image {
  padding: 5% 0;
+ 
+}
+
+.products .row .product-title  {
+  height: 82%;
 }
 
 .products .row .product-title ul li {
   padding-right: 1%;
   font-size: 1.2rem;
   font-weight: bold;
-  line-height: 22px;
-
-
+  line-height: 13px;
 }
 
 
@@ -1058,8 +1077,6 @@ footer {
 .about .row .content ul li a {
   font-size: 1.3rem;
   line-height: none;
-  
-  
 }
 
   .about .row .about-img:hover {
@@ -1076,16 +1093,15 @@ footer {
 
 
 .products .row .product-title ul li {
-  width: 100%;
-  padding-left: 1%;
-  line-height: 20px;
+   
+  line-height: 10px;
  font-size: 1rem;
 
 }
 
   .contact .contact-container {
     flex-wrap: wrap;
-    height: 90%;
+   
   }
 
     .contact .contact-container ul li label{
@@ -1118,14 +1134,17 @@ footer {
 
   .navbar .navbar-logo {
     padding-bottom: 20px;
-    padding-left: 30px;
-    width: 80%;
+    padding-left: 20px;
     font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
 
   .navbar .navbar-nav a {
     text-align: start;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 20px;
   }
 
   .navbar .navbar-extra {
@@ -1148,12 +1167,7 @@ footer {
   .about h2 {
     padding-top: 5%;
     margin-top: 5%;
-   
-  
-  
   }
-
-
  
   .about .row .about-img  {
     background-image: none;
@@ -1161,38 +1175,42 @@ footer {
 
   .about .row .content  {
     font-size: 0.9rem;
+   
   }
   .about .row .content h3 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 15px;
+    transition: 1s ease;
   }
 
-  .about .row .content ul { 
-    line-height: 1px;
+  .about .row .content h3:hover {
+    font-size: 0.8rem;
+
   }
-  .about .row .content ul li {
-  font-weight: normal;
-   
+
+  .about .row .pengurus-umum ul {
+    line-height: 20px;
+    
   } 
 
 
-  .about .row .container-pengurus h4{
-    margin-top: 2%;
-    height: 30%;
-    line-height: 15px;
-   
-  }
+  .about .row .content ul li a{
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+  } 
 
-    .about .row .container-pengurus ul {
-    background-color: aqua;
-    gap: 10px;
-
+  .about .row .container-pengurus h4 {
+    position: relative;
+    top: 45px;
+    left: -10px;
+    line-height: 20px;
+    font-size: 4rem;
   }
 
    .about .row .container-pengurus ul li{
-    font-size: 0.6rem;
-    column-gap: 10px;
-    background-color: coral;
+    font-size: 0.9rem;
+  
   
   }
 
@@ -1202,24 +1220,49 @@ footer {
   
   }
 
+  .products .product-card {
 
+    background-color: #ffcc00;
+    max-width: 90%;
+  }
+
+  .products .product-card:nth-child(n+4) {
+    display: none;
+  }
+  
+
+.products .product-card .product-image {
+  background-color: aqua;
+
+
+}
+.products .product-card .product-title h3 {
+  position: sticky;
+  padding-top: 3%;
+  text-align: center;
+  width: 80%;
+  height: 13%;
+  top: 0;
+background-color: #f4f4f4;
+} 
 
 .products .row .product-title ul li {
   font-weight: bold;
-  line-height: 12px;
+  line-height: 5px;
+  font-size: 0.6rem;
+  background-color: #5c5b66;
+  width: 100%;
 }
 
 
 .products .row .product-card {
-  width: 100vw;
+  
   height: 25vh;
-  margin-bottom: 15px;
+ 
 }
 
 
-
   .contact {
-  
     padding-top: 10%;
   }
 
