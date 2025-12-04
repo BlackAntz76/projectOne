@@ -44,7 +44,6 @@ section {
   left: 0;
   right: 0;
   z-index: 9999;
-
 }
 
 .navbar .navbar-logo {
@@ -64,15 +63,11 @@ section {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   width: 50%;
- 
-
 }
-.navbar  img {
+.navbar img {
   filter: brightness(1) invert(1);
   padding-right: 3%;
 }
-
-
 
 @keyframes animasiku {
   0% {
@@ -110,16 +105,12 @@ section {
   }
 }
 
-
 .navbar .navbar-nav {
   position: relative;
   text-align: center;
   padding-top: 3%;
   width: 30%;
-
 }
-
-
 
 .navbar .navbar-nav a {
   color: #fff;
@@ -137,7 +128,6 @@ section {
   transform: translatey(-5px);
   transition: all 0.5s;
   filter: drop-shadow(0 0 1px var(--tertier));
-
 }
 
 .navbar .navbar-nav a::after {
@@ -153,7 +143,7 @@ section {
   transform: scaleX(0.6);
 }
 
-.navbar .navbar-extra  {
+.navbar .navbar-extra {
   padding-top: 2%;
   padding-left: 2%;
 }
@@ -163,8 +153,7 @@ section {
 
 .navbar .navbar-extra a:hover {
   color: var(--primary);
-   filter: drop-shadow( 0 0 1px var(--primary));
- 
+  filter: drop-shadow(0 0 1px var(--primary));
 }
 
 #hamburger-menu {
@@ -188,7 +177,7 @@ section {
   transition: 0.5s;
   border-bottom: 1px solid var(--secondary);
   border-inline: 0.5px solid var(--secondary);
-    filter: drop-shadow( 1px 1px 1px var(--secondary));
+  filter: drop-shadow(1px 1px 1px var(--secondary));
 }
 
 .navbar .search-form.active {
@@ -209,9 +198,6 @@ section {
   margin-right: 1.5rem;
   color: var(--bg);
 }
-
-
-
 
 /* hero section */
 
@@ -235,7 +221,6 @@ section {
   width: 60%;
   filter: drop-shadow(0 0 1px #000);
   padding: 1% 2%;
-   
 }
 
 .home .home-text h1 {
@@ -269,7 +254,6 @@ section {
   font-style: italic;
   color: var(--primary);
   padding-right: 10px;
- 
 }
 
 .home .home-text .happiness {
@@ -356,19 +340,15 @@ section {
   cursor: pointer;
 }
 
-
-
 /* about section */
 
 .about {
-  
   padding-top: 7%;
   padding-inline: 1%;
   margin-top: 4%;
   width: 100%;
   height: 100vh;
   padding-inline: 3%;
-  
 }
 
 .about h2,
@@ -377,8 +357,6 @@ section {
   font-size: 2.8rem;
   margin-bottom: 1%;
   color: var(--tertier);
-
-  
 }
 
 .about h2 span,
@@ -396,15 +374,13 @@ section {
   height: 100%;
   max-width: 40vw;
   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 
 .about .row .content {
   flex: 1 1 50rem;
   max-width: 55%;
-
 }
 
 .about .row .content h3 {
@@ -416,13 +392,11 @@ section {
   font-weight: bold;
   padding-bottom: 1%;
   border-bottom: 2px dashed rgb(58, 54, 54);
-
 }
 
 .about .row .content ul li {
   display: inline-block;
   font-size: 1.2rem;
- 
 }
 
 .about .row .content ul li:after {
@@ -434,23 +408,18 @@ section {
   transform-origin: left;
   transition: 0.5s linear;
   filter: drop-shadow(0 0 1px var(--primary));
-
-
 }
 
 .about .row .content ul li:hover::after {
   transform: scaleX(1);
-
-  
-   
 }
 
 .about .row .content ul li span {
- color: #000;
- font-weight: bold;
-} 
+  color: #000;
+  font-weight: bold;
+}
 
-.about .row .content .container-pengurus  {
+.about .row .content .container-pengurus {
   display: flex;
   flex-wrap: wrap;
   color: black;
@@ -458,38 +427,30 @@ section {
   margin-top: 1%;
   margin-bottom: 1%;
   border-bottom: 1px solid silver;
-  height:25%;
- 
-  
+  height: 25%;
 }
 
-.about .row .content .container-pengurus h4  {
+.about .row .content .container-pengurus h4 {
   font-size: 1.3rem;
- width: 100vw;
- margin-bottom: 8px;
- word-spacing: 5px;
- color: rgb(80, 60, 60);
- filter: 1px 1px 2px ;
+  width: 100vw;
+  margin-bottom: 8px;
+  word-spacing: 5px;
+  color: rgb(80, 60, 60);
+  filter: 1px 1px 2px;
 }
 
-.about .row .content .container-pengurus h5  {
+.about .row .content .container-pengurus h5 {
   display: flex;
   justify-content: space-between;
- padding-right: 4%;
- font-size: 0.8rem;
-
-
-
+  padding-right: 4%;
+  font-size: 0.8rem;
 }
 
 .about .row .content .container-pengurus h5 span {
   color: brown;
 
-width: 100%;
-   
+  width: 100%;
 }
-
-
 
 /*   -------   PRODUCT section   --------    */
 
@@ -498,8 +459,7 @@ width: 100%;
   padding-top: 6%;
   margin-top: 10%;
   border-top: 1px solid #555;
-overflow: hidden;
-  
+  overflow: hidden;
 }
 
 .products p {
@@ -519,53 +479,41 @@ overflow: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   column-gap: 2rem;
-
-
 }
-
- 
 
 .products .product-card {
   display: flex;
   justify-content: space-between;
   border: 1px solid #666;
- padding-inline: 3%;
+  padding-inline: 3%;
   background-color: #f4f4f4;
   gap: 30px;
   transition: 0.5s ease;
   height: 90%;
-
-  
 }
 
 .products .product-card:hover {
-
- box-shadow: 0 10px 20px rgba( 0 0 0 0.15);
- filter: brightness(0.85);
- transform: translatey(-5px);
+  box-shadow: 0 10px 20px rgba(0 0 0 0.15);
+  filter: brightness(0.85);
+  transform: translatey(-5px);
   transition: 0.3s linear;
-
 }
 
 .products .product-card .product-image {
-
-padding-top: 6%;
-    width: 45%;
-     height: 90%;
+  padding-top: 6%;
+  width: 45%;
+  height: 90%;
 }
 
 .products .product-card .product-image img {
-  width:100%;
+  width: 100%;
   height: 100%;
- 
-
 }
 
-.products .product-card .product-title  {
-
- color: #000;
-width: 55%;
-height: 90%;
+.products .product-card .product-title {
+  color: #000;
+  width: 55%;
+  height: 90%;
   overflow: auto;
 }
 
@@ -576,25 +524,21 @@ height: 90%;
   width: 100%;
   height: 13%;
   top: 0;
-background-color: #f4f4f4;
-} 
+  background-color: #f4f4f4;
+}
 
 .products .product-card .product-title ul {
   width: 100%;
   margin-top: 10px;
   color: #010101;
-  max-height: 50%; 
+  max-height: 50%;
 }
 
 .products .product-card .product-title ul li {
   margin-bottom: 10px;
 }
 
-
-
-
 /*   -------   contact section   --------    */
-
 
 .contact {
   padding: 4% 3% 0;
@@ -608,21 +552,18 @@ background-color: #f4f4f4;
   margin-top: 3%;
   margin-bottom: 2rem;
   word-spacing: 0.8rem;
-
 }
 
 .contact h2 span {
   color: var(--secondary);
 }
 
-
-
 .contact .contact-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   width: 50%;
   background-color: wheat;
-   column-gap: 150px;
+  column-gap: 150px;
 }
 
 .contact .contact-container .contact-info {
@@ -630,7 +571,7 @@ background-color: #f4f4f4;
   margin-bottom: 20px;
 }
 
-.contact .contact-container .contact-info ul  {
+.contact .contact-container .contact-info ul {
   padding-left: 16%;
   padding-top: 5%;
   color: var(--secondary);
@@ -638,15 +579,13 @@ background-color: #f4f4f4;
   text-decoration: none;
   margin-bottom: 3%;
   word-spacing: 10px;
- list-style: none;
-
+  list-style: none;
 }
 
 .contact .contact-container .contact-info ul li {
-width: 40vw;
-font-size: 1.4rem;
-font-weight: bold;
-
+  width: 40vw;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .contact .contact-add,
@@ -654,7 +593,6 @@ font-weight: bold;
 .contact .contact-mail {
   padding-left: 5%;
   margin-bottom: 3%;
-
 }
 
 .contact .contact-container .contact-info .contact-add h3,
@@ -664,21 +602,17 @@ font-weight: bold;
   color: var(--secondary);
 }
 
-
 .contact-info a {
   position: relative;
   top: 10px;
   color: #5c5b66;
 
-    animation-name: animasiku;
+  animation-name: animasiku;
   animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
- 
 }
-
-
 
 .contact-info h3 {
   color: #f4f4f4;
@@ -695,10 +629,8 @@ font-weight: bold;
   width: 400px;
   height: 180px;
   margin-left: 15%;
-  border-radius: 10px ;
+  border-radius: 10px;
   margin-top: 40px;
-  
- 
 }
 
 .contact .contact-container .input-data {
@@ -706,34 +638,24 @@ font-weight: bold;
   min-width: 45vw;
   padding-top: 3%;
   padding-left: 5%;
-
-  
 }
 
 .contact .contact-container .input-data ul li {
   display: flex;
   padding-top: 3%;
   margin-bottom: 3%;
-  
-
 }
 
 .contact .contact-container .input-data label {
   font-size: 1.8rem;
   width: 35%;
- 
-  
-
 }
 .contact .contact-container .input-data input {
   margin-left: 2%;
   padding-left: 4%;
   height: 4vh;
   width: 50%;
-
 }
-
-
 
 button[type="submit"] {
   display: inline-block;
@@ -754,8 +676,6 @@ button[type="submit"]:hover {
   background-color: var(--tertier);
 }
 
-
-
 footer {
   font-size: 1rem;
   font-weight: bold;
@@ -769,8 +689,6 @@ footer {
 /* nedia queries */
 
 /* leptop */
-
-
 
 /* nedia queries */
 
@@ -790,13 +708,11 @@ footer {
     height: 8%;
   }
 
-
   .navbar img {
     width: 10%;
     height: 60px;
     background-position: center;
     margin-right: 5%;
-
   }
 
   .navbar .navbar-logo {
@@ -807,25 +723,22 @@ footer {
     width: 40%;
     padding: none;
   }
-  
-  .navbar .navbar-nav a{
+
+  .navbar .navbar-nav a {
     margin: 1px;
   }
 
-
-  .about .row .about-img  {
+  .about .row .about-img {
     display: none;
-  
   }
 
   .about h2 {
     padding-top: 6%;
     margin-bottom: 3%;
     word-spacing: 10px;
-    
   }
 
- .about .row  {
+  .about .row {
     background-image: url(../img/gambar/jamtangan.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -834,63 +747,54 @@ footer {
 
     height: 85%;
     width: 100%;
-   
-    
-  } 
+  }
 
   .about .row .content,
-  .about .row .content h4{
+  .about .row .content h4 {
     padding-inline: 5%;
     font-size: 2rem;
     line-height: 35px;
-
   }
 
   .about .row .content {
     max-width: 100%;
-   
   }
 
   .about .row .content h3 {
-  line-height: 20px;
-  word-spacing: 10px;
-  font-size: 2rem;
-  font-weight: bold;
-   filter: drop-shadow(1px 1px 2px var(--primary));
+    line-height: 20px;
+    word-spacing: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    filter: drop-shadow(1px 1px 2px var(--primary));
   }
 
   .about .row .content h3:hover {
     filter: drop-shadow(0 1px 2px var(--secondary));
     color: var(--primary);
-  font-size: 2rem;
+    font-size: 2rem;
   }
 
-   .about .row .content a {
+  .about .row .content a {
     line-height: 25px;
     font-size: 1.6rem;
     font-weight: bold;
-    
-   }
-   
-   .about .container-pengurus {
+  }
+
+  .about .container-pengurus {
     max-height: 7%;
-   }
+  }
 
-
-
-   .about .container-pengurus ul {
+  .about .container-pengurus ul {
     display: inline-block;
+  }
 
-   }
-
-   .about .container-pengurus ul li{
+  .about .container-pengurus ul li {
     display: inline-block;
     flex-wrap: wrap;
     margin-right: 25px;
-   }
- 
-                /* PRODUCTS */
- 
+  }
+
+  /* PRODUCTS */
 
   .products {
     height: 100vh;
@@ -898,80 +802,69 @@ footer {
     margin-bottom: 10%;
   }
 
-.products h2 {
-  word-spacing: 10px;
-}
+  .products h2 {
+    word-spacing: 10px;
+  }
 
-.products .row .product-card {
-  height: 35vw;
-  margin-bottom: 30px;
+  .products .row .product-card {
+    height: 35vw;
+    margin-bottom: 30px;
+  }
 
+  .products .row .product-image img {
+    height: 100%;
+    padding-top: 10%;
+    background-position: center;
+    background-size: cover;
+  }
 
-}
+  .products .row .product-image {
+    padding: 5% 0;
+  }
 
+  .products .row .product-title {
+    height: 82%;
+  }
 
-.products .row .product-image img {
-  height: 100%;
-  padding-top: 10%;
-  background-position: center;
-  background-size: cover;
-}
+  .products .row .product-title ul li {
+    padding-right: 1%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 13px;
+  }
 
-.products .row .product-image {
- padding: 5% 0;
- 
-}
-
-.products .row .product-title  {
-  height: 82%;
-}
-
-.products .row .product-title ul li {
-  padding-right: 1%;
-  font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 13px;
-}
-
-
-                 /* CONTACT */
-
+  /* CONTACT */
 
   .contact {
     height: 100vh;
-
   }
 
   .contact h2 {
     margin-bottom: 5%;
     padding-top: 10%;
   }
- 
+
   .contact .contact-container {
     column-gap: 90px;
   }
 
-   .contact .contact-container .contact-info,
-   .contact .contact-container .input-data {
+  .contact .contact-container .contact-info,
+  .contact .contact-container .input-data {
     padding-top: 5%;
-   }
+  }
 
   .contact .contact-container .contact-info ul li {
     font-size: 1.2rem;
     font-weight: bold;
-
-   
   }
 
   .contact .contact-info iframe {
-  width: 90%;
-   height: 20vh;
-   
+    width: 90%;
+    height: 20vh;
   }
 
   footer {
     justify-content: flex-end;
-  
   }
 }
 
@@ -995,14 +888,13 @@ footer {
     transition: 0.3s;
   }
 
-
   .navbar .navbar-nav.active {
     right: 0;
   }
 
   .navbar .navbar-nav a {
     display: block;
-   color: var(--secondary);
+    color: var(--secondary);
     margin: 1rem;
     padding-left: 13%;
     padding-top: 5%;
@@ -1011,7 +903,6 @@ footer {
     filter: drop-shadow(0 1px 1px #000);
     text-align: left;
     height: 40px;
-   
   }
 
   .navbar .navbar-nav a:hover {
@@ -1025,9 +916,7 @@ footer {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     opacity: 1;
-      filter: drop-shadow(0 1px 2px #000);
-    
-
+    filter: drop-shadow(0 1px 2px #000);
   }
 
   .navbar .navbar-nav a::after {
@@ -1036,20 +925,16 @@ footer {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(object-fit);
-  
   }
 
- 
-  .navbar .navbar-extra  {
+  .navbar .navbar-extra {
     display: flex;
-    justify-content:space-between;
-     width: 100;
-     margin-right: 5%;
-     cursor: pointer;
-
-    
+    justify-content: space-between;
+    width: 100;
+    margin-right: 5%;
+    cursor: pointer;
   }
-  
+
   .navbar .navbar-extra a {
     padding-right: 50%;
   }
@@ -1057,67 +942,49 @@ footer {
   .navbar .search-form {
     width: 85%;
   }
-  
 
-
-
-  .about .row   {
-   
+  .about .row {
     border-radius: 360px 18px 360px 18px;
     transition: all 3s ease;
- 
-   
   }
 
-.about .row .content ul li {
-  height: 20px;
- 
-}
+  .about .row .content ul li {
+    height: 20px;
+  }
 
-.about .row .content ul li a {
-  font-size: 1.3rem;
-  line-height: none;
-}
+  .about .row .content ul li a {
+    font-size: 1.3rem;
+    line-height: none;
+  }
 
   .about .row .about-img:hover {
     transition: all 3s ease;
     border-radius: 0;
-  
   }
 
- 
+  .products .pagination {
+    margin-top: 10px;
+    padding-block: 3%;
 
-
-                  /* P R O D U C T */
-
-
-
-.products .row .product-title ul li {
-   
-  line-height: 10px;
- font-size: 1rem;
-
-}
+  }
+  
+  .products .row .product-title ul li {
+    line-height: 10px;
+    font-size: 1rem;
+  }
 
   .contact .contact-container {
     flex-wrap: wrap;
-   
   }
 
-    .contact .contact-container ul li label{
+  .contact .contact-container ul li label {
     margin-right: 5%;
-   
   }
 
   .contact .contact-container .maps {
     height: 40%;
   }
-
-
-
-
 }
-
 
 /* mobile phone */
 
@@ -1125,20 +992,19 @@ footer {
   html {
     font-size: 35%;
   }
-  
+
   .navbar img {
-    width: 60px;
+    width: 50px;
     height: 40px;
     padding-bottom: 5px;
   }
 
   .navbar .navbar-logo {
     padding-bottom: 20px;
-    padding-left: 20px;
     font-size: 1.2rem;
+    margin-left: 30px;
     font-size: 0.9rem;
   }
-
 
   .navbar .navbar-nav a {
     text-align: start;
@@ -1153,139 +1019,115 @@ footer {
     width: 7%;
   }
 
-
   .home .home-text {
     width: 70%;
     margin-left: 4%;
- 
   }
 
   .about {
-    height: 100%;
+    max-height: 100vh;
   }
 
   .about h2 {
     padding-top: 5%;
     margin-top: 5%;
+    font-size: 1.5rem;
   }
- 
-  .about .row .about-img  {
+
+  .about .row .about-img {
     background-image: none;
   }
 
-  .about .row .content  {
-    font-size: 0.9rem;
-   
-  }
+  /* .about .row .content {
+  } */
   .about .row .content h3 {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 15px;
     transition: 1s ease;
   }
 
   .about .row .content h3:hover {
-    font-size: 0.8rem;
-
+    font-size: 0.6rem;
   }
 
   .about .row .pengurus-umum ul {
-    line-height: 20px;
-    
-  } 
+    line-height: 10px;
+  }
 
-
-  .about .row .content ul li a{
-  font-size: 0.7rem;
-  margin: 0;
-  padding: 0;
-  } 
+  .about .row .content ul li a {
+    font-size: 0.7rem;
+  }
 
   .about .row .container-pengurus h4 {
+    display: inline-block;
     position: relative;
     top: 45px;
     left: -10px;
     line-height: 20px;
-    font-size: 4rem;
+    font-weight: 300;
+    font-size: 0.5rem;
   }
 
-   .about .row .container-pengurus ul li{
-    font-size: 0.9rem;
-  
-  
+  .about .row .container-pengurus ul li a {
+    font-size: 0.5rem;
   }
-
 
   .products {
-    border-bottom: 1px solid var(--secondary) ;
-  
+    border-bottom: 1px solid var(--secondary);
   }
 
-  .products .product-card {
+  /* .products .product-card {
+ 
+  } */
 
-    background-color: #ffcc00;
-    max-width: 90%;
-  }
-
-  .products .product-card:nth-child(n+4) {
+  .products .product-card:nth-child(n + 4) {
     display: none;
   }
-  
 
-.products .product-card .product-image {
-  background-color: aqua;
+  .products .product-card .product-image img {
+    height: fit-content;
+  }
+  .products .product-card .product-title h3 {
+    position: sticky;
+    padding-top: 3%;
+    text-align: center;
+    width: 80%;
+    height: 13%;
+    top: 0;
+    background-color: #f4f4f4;
+  }
 
+  .products .row .product-title ul a{
+    line-height: 1px;
+  }
+  .products .row .product-title ul li {
+    font-weight: bold;
+    font-size: 0.6rem;
+   
+    padding-right: 3%;
+  }
 
-}
-.products .product-card .product-title h3 {
-  position: sticky;
-  padding-top: 3%;
-  text-align: center;
-  width: 80%;
-  height: 13%;
-  top: 0;
-background-color: #f4f4f4;
-} 
-
-.products .row .product-title ul li {
-  font-weight: bold;
-  line-height: 5px;
-  font-size: 0.6rem;
-  background-color: #5c5b66;
-  width: 100%;
-}
-
-
-.products .row .product-card {
-  
-  height: 25vh;
- 
-}
-
+  .products .row .product-card {
+    height: 25vh;
+  }
 
   .contact {
     padding-top: 10%;
   }
 
-
-
   .contact .contact-container {
-    
-   width: 100%;
-   height: 40%;
-
+    width: 100%;
+    height: 40%;
   }
 
-  .contact .contact-container .contact-info ul li{
+  .contact .contact-container .contact-info ul li {
     width: 110%;
     font-size: 1rem;
-  
- 
   }
-  .contact .contact-container .contact-info h3{
-    width:fit-content;
+  .contact .contact-container .contact-info h3 {
+    width: fit-content;
     font-size: 1rem;
     padding-top: 3%;
-   
   }
 
   .contact .contact-container .input-data {
@@ -1293,8 +1135,8 @@ background-color: #f4f4f4;
     width: 100vw;
     height: 90%;
   }
-  
-  .contact .contact-container .input-data  label {
+
+  .contact .contact-container .input-data label {
     align-content: center;
     font-size: 1.3rem;
     font-weight: bold;
@@ -1303,12 +1145,6 @@ background-color: #f4f4f4;
   .peta {
     display: none;
   }
- 
- 
-
- 
-
-
 }
 
 @keyframes animateWords {
